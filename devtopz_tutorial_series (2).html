@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>DevtopZ Tutorial Series</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body {
+      font-family: "Orbitron", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at center, #0a0f1f, #000000 80%);
+      color: #dce3ff;
+    }
+    .wrapper {
+      max-width: 1000px;
+      margin: 50px auto;
+      background: rgba(10, 15, 35, 0.85);
+      color: #dce3ff;
+      padding: 45px;
+      border-radius: 20px;
+      border: 2px solid #3b82f6;
+      box-shadow: 0 0 25px #3b82f6aa;
+      backdrop-filter: blur(6px);
+    }
+    h1 {
+      font-size: 42px;
+      text-align: center;
+      margin-bottom: 10px;
+      color: #60a5fa;
+      letter-spacing: 1px;
+      font-weight: 900;
+      text-shadow: 0 0 10px #1e3a8a;
+    }
+    .subtitle {
+      text-align: center;
+      color: #94a3b8;
+      font-size: 18px;
+      margin-bottom: 35px;
+      text-shadow: 0 0 6px #334155;
+    }
+    .chapter {
+      border-left: 5px solid #3b82f6;
+      padding: 20px 22px;
+      margin: 25px 0;
+      border-radius: 14px;
+      background: rgba(30, 41, 59, 0.6);
+      transition: 0.25s ease;
+      box-shadow: 0 0 12px #1e3a8a66;
+    }
+    .chapter:hover {
+      background: rgba(30, 58, 138, 0.55);
+      transform: translateX(6px);
+      box-shadow: 0 0 16px #3b82f6aa;
+    }
+    .chapter h2 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 800;
+      color: #93c5fd;
+      text-shadow: 0 0 8px #1e40af;
+    }
+    .chapter ul {
+      margin-top: 12px;
+      padding-left: 25px;
+      color: #cbd5e1;
+      font-size: 15px;
+    }
+    .chapter p.small {
+      margin-top: 10px;
+      color: #94a3b8;
+      font-size: 14px;
+      text-shadow: 0 0 5px #1e293b;
+    }
+    footer {
+      text-align: center;
+      margin-top: 45px;
+      font-size: 14px;
+      color: #64748b;
+      text-shadow: 0 0 4px #1e293b;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1>DevtopZ Tutorial Series</h1>
+    <div class="subtitle">Complete Server Data Editing Guide — Step-by-Step Flow</div>
+
+    <!-- Existing Chapters -->
+    <div class="chapter">
+      <h2>1. Introduction to the Server Data Structure</h2>
+      <ul>
+        <li>What these folders contain</li>
+        <li>How the server reads / loads them</li>
+        <li>Understanding .edf and Excel data types</li>
+      </ul>
+      <p class="small">A foundation episode explaining the entire system layout.</p>
+    </div>
+
+    <div class="chapter">
+      <h2>2. Character & Player Essentials</h2>
+      <ul>
+        <li>Character.edf overview</li>
+        <li>PlayerCharacter.edf basics</li>
+        <li>Classes, stats, growth, attribute scaling</li>
+      </ul>
+      <p class="small">Teach how players are defined and how stats are controlled.</p>
+    </div>
+
+    <div class="chapter">
+      <h2>3. Maps & World Configuration</h2>
+      <ul>
+        <li>Map.edf</li>
+        <li>Resource.edf (spawn tables, resource nodes, world objects)</li>
+      </ul>
+      <p class="small">Show how world data is structured and linked.</p>
+    </div>
+
+    <div class="chapter">
+      <h2>4. Items System</h2>
+      <ul>
+        <li>Item.edf — Base item definitions</li>
+        <li>ItemPremium.edf</li>
+        <li>ItemCash.edf</li>
+        <li>ItemCombine.edf (crafting)</li>
+        <li>ItemSetEffect.edf (set bonuses)</li>
+        <li>ItemTimer.edf (timed items)</li>
+        <li>Store.edf (NPC shops)</li>
+      </ul>
+      <p class="small">A deep multi-part series covering how items are built.</p>
+    </div>
+
+    <div class="chapter">
+      <h2>5. Skills & Combat Logic</h2>
+      <ul>
+        <li>SkillForce.edf</li>
+        <li>CheckPotionEffect.xlsx</li>
+        <li>Damage formulas, buff logic, interactions</li>
+      </ul>
+      <p class="small">Explain skill behavior and how formulas actually calculate damage.</p>
+    </div>
+
+    <div class="chapter">
+      <h2>6. Quests & Game Progression</h2>
+      <ul>
+        <li>Quest.edf</li>
+        <li>EventShip.xlsx / MsgEvent.xlsx</li>
+      </ul>
+      <p class="small">Define how quests, mission chains, and event triggers work.</p>
+    </div>
+
+    <div class="chapter">
+      <h2>7. Monster System</h2>
+      <ul>
+        <li>ItemLooting.xlsx — Drop tables</li>
+        <li>Schedule.xlsx — Spawn times</li>
+        <li>MobMessage.xlsx — Boss announcements</li>
+      </ul>
+      <p class="small">Teach monster behavior, drops, and scheduling.</p>
+    </div>
+
+    <div class="chapter">
+      <h2>8. Grades & Leveling System</h2>
+      <ul>
+        <li>Grade.xlsx — Rank tiers</li>
+        <li>Leveling and power scaling</li>
+      </ul>
+      <p class="small">Show how power progression ties together.</p>
+    </div>
+
+    <div class="chapter">
+      <h2>9. Language Localization</h2>
+      <ul>
+        <li>Language.xlsx — Items, NPCs, UI text</li>
+      </ul>
+      <p class="small">Useful for custom servers, branding, and translation.</p>
+    </div>
+
+    <div class="chapter">
+      <h2>10. Config Folder</h2>
+      <ul>
+        <li>Server-wide settings</li>
+        <li>EXP rates, drop rates, system toggles</li>
+      </ul>
+      <p class="small">Critical tuning for balancing your custom server.</p>
+    </div>
+
+    <div class="chapter">
+      <h2>11. Integration & Testing</h2>
+      <ul>
+        <li>Repacking / reloading .edf files</li>
+        <li>Error prevention</li>
+        <li>Testing changes safely</li>
+      </ul>
+      <p class="small">Final episode ensuring stable deployment.</p>
+    </div>
+
+    <!-- NEW Character.edf Tutorial Series Section -->
+    <div class="chapter">
+      <h2>Phase I — Character.edf Deep-Dive Tutorial Series</h2>
+      <ul>
+        <li>Understanding each sheet (Action, Animus, Class, Exp, Grade, MasteryLimData, MonsterCharacter)</li>
+        
+        <li>Stat tables, growth curves, race limitations</li>
+        <li>Editing EXP curve safely</li>
+        <li>Rebalancing classes & monsters</li>
+        <li>Common bugs & how to avoid them</li>
+      </ul>
+      <p class="small">A complete walkthrough dedicated to mastering Character.edf editing.</p>
+    </div>
+
+    <footer>
+      DevtopZ — Professional Server Editing Tutorials
+    </footer>
+  </div>
+</body>
+</html>
