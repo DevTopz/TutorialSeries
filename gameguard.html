@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>DevCorp Game Guard</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body { font-family: "Orbitron", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin:0; padding:0; background: radial-gradient(circle at center, #0a0f1f, #000000 80%); color:#dce3ff; }
+    .wrapper { max-width:1000px; margin:50px auto; background: rgba(10,15,35,0.85); color:#dce3ff; padding:45px; border-radius:20px; border:2px solid #3b82f6; box-shadow:0 0 25px #3b82f6aa; backdrop-filter: blur(6px); }
+    .nav { position: sticky; top:0; display:flex; justify-content:center; gap:24px; padding:14px 18px; background: rgba(10,15,35,0.9); border-bottom:1px solid #3b82f6; box-shadow:0 0 15px #3b82f6aa; z-index:10; }
+    .nav a { color:#93c5fd; text-decoration:none; font-weight:800; letter-spacing:0.4px; }
+    .nav a:hover { color:#dce3ff; }
+    h1 { font-size:42px; text-align:center; margin-bottom:10px; color:#60a5fa; letter-spacing:1px; font-weight:900; text-shadow:0 0 10px #1e3a8a; }
+    .subtitle { text-align:center; color:#94a3b8; font-size:18px; margin-bottom:35px; text-shadow:0 0 6px #334155; }
+    .section { border-left:5px solid #3b82f6; padding:20px 22px; margin:25px 0; border-radius:14px; background: rgba(30,41,59,0.6); box-shadow:0 0 12px #1e3a8a66; }
+    .section h2 { margin:0 0 10px; font-size:22px; font-weight:800; color:#93c5fd; text-shadow:0 0 8px #1e40af; }
+    .plans { list-style:none; padding-left:0; margin:0; color:#cbd5e1; font-size:15px; }
+    .plans li { padding:6px 0; }
+    .pricing-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:22px; }
+    .card { background: rgba(30,41,59,0.6); border-radius:14px; border:1px solid #334155; box-shadow:0 8px 24px rgba(30,41,59,0.45); padding:24px; transition: transform .2s ease, box-shadow .2s ease; position:relative; }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 18px 30px rgba(59,130,246,0.35); }
+    .card h3 { margin:0 0 6px; font-size:18px; letter-spacing:.5px; color:#cbd5e1; font-weight:800; }
+    .badge-top { position:absolute; top:-12px; left:20px; background:#fde047; color:#1f2937; font-weight:900; padding:6px 10px; border-radius:10px; box-shadow:0 6px 16px rgba(253,224,71,0.35); }
+    .tiers { display:grid; gap:12px; }
+    .tier { background: rgba(10,15,35,0.65); border:1px solid #1f2937; border-radius:10px; padding:10px 12px; }
+    .tier .tier-name { color:#93c5fd; font-weight:900; }
+    .tier .note { color:#94a3b8; font-size:13px; }
+    .price { font-size:30px; color:#60a5fa; font-weight:900; margin:2px 0 4px; }
+    .price small { color:#1f2937; background:#fde047; border-radius:999px; padding:2px 8px; font-size:12px; font-weight:900; margin-left:8px; }
+    .contact-bar { display:flex; justify-content:center; align-items:center; gap:12px; margin-bottom:18px; }
+    .contact-bar .handle { color:#93c5fd; font-weight:900; }
+    .contact-bar .link { background: linear-gradient(135deg, #22c55e 0%, #10b981 100%); color:#03121f; font-weight:900; padding:8px 12px; border-radius:10px; text-decoration:none; box-shadow:0 6px 16px rgba(34,197,94,0.35); border:1px solid #065f46; }
+    .contact-bar .link:hover { filter:brightness(1.05); }
+    footer { text-align:center; margin-top:45px; font-size:14px; color:#64748b; text-shadow:0 0 4px #1e293b; }
+  </style>
+  <meta name="description" content="DevCorp Game Guard protection plans and modules." />
+</head>
+<body>
+  <nav class="nav">
+    <a href="index.html">Tutorial</a>
+    <a href="services.html">Services</a>
+    <a href="gameguard.html">Game Guard</a>
+  </nav>
+  <div class="wrapper">
+    <h1>DevCorp Game Guard</h1>
+    <div class="subtitle">Protection plans and modules</div>
+    <div class="contact-bar">
+      <div>Contact Discord:</div>
+      <div class="handle">devtopz_</div>
+      <a class="link" href="https://discord.gg/6BVwnHRejP" target="_blank" rel="noopener">Join Discord</a>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="card">
+        <div class="badge-top">GU</div>
+        <h3>2.2.3.2 / GU</h3>
+        <div class="tiers">
+          <div class="tier">
+            <div class="tier-name">Protect 2232</div>
+            <div class="price">$300 <small>6 months</small></div>
+            <div class="note">+ All modules.</div>
+          </div>
+          <div class="tier">
+            <div class="tier-name">Protect 2232</div>
+            <div class="price">$500 <small>12 months</small></div>
+            <div class="note">+ All modules.</div>
+          </div>
+          <div class="tier">
+            <div class="tier-name">Protect 2232</div>
+            <div class="price">$1000 <small>Permament</small></div>
+            <div class="note">(no fee transfer to new pc) + All modules.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="badge-top">AOP</div>
+        <h3>4.15 / AOP</h3>
+        <div class="tiers">
+          <div class="tier">
+            <div class="tier-name">Protect AOP_415</div>
+            <div class="price">$500 <small>6 months</small></div>
+            <div class="note">+ All modules.</div>
+          </div>
+          <div class="tier">
+            <div class="tier-name">Protect AOP_415</div>
+            <div class="price">$1000 <small>12 months</small></div>
+            <div class="note">+ All modules.</div>
+          </div>
+          <div class="tier">
+            <div class="tier-name">Protect AOP_415</div>
+            <div class="price">$1500 <small>Permament</small></div>
+            <div class="note">(no fee transfer to new pc) + All modules.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="badge-top">AOP</div>
+        <h3>4.55 - 4.75 / AOP</h3>
+        <div class="tiers">
+          <div class="tier">
+            <div class="tier-name">Protect AOP_455</div>
+            <div class="price">$800 <small>6 months</small></div>
+            <div class="note">+ All modules.</div>
+          </div>
+          <div class="tier">
+            <div class="tier-name">Protect AOP_455</div>
+            <div class="price">$1400 <small>12 months</small></div>
+            <div class="note">+ All modules.</div>
+          </div>
+          <div class="tier">
+            <div class="tier-name">Protect AOP_455</div>
+            <div class="price">$3000 <small>Permament</small></div>
+            <div class="note">(no fee transfer to new pc) + All modules.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>DevCorp — Game Guard Packages</footer>
+  </div>
+</body>
+</html>
