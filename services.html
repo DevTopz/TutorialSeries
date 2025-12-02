@@ -100,6 +100,117 @@
     .nav a:hover {
       color: #dce3ff;
     }
+    .section-title {
+      text-align: center;
+      font-size: 28px;
+      font-weight: 900;
+      color: #93c5fd;
+      margin: 10px 0 24px;
+    }
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+    }
+    .card {
+      background: rgba(30, 41, 59, 0.6);
+      border-radius: 14px;
+      border: 1px solid #334155;
+      box-shadow: 0 8px 24px rgba(30, 41, 59, 0.45);
+      padding: 24px;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 18px 30px rgba(59, 130, 246, 0.35); }
+    .card.vip {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 35%, #1d2547 100%);
+      border-color: #3b82f6;
+    }
+    .card h3 {
+      margin: 0 0 6px;
+      font-size: 18px;
+      letter-spacing: 0.5px;
+      color: #cbd5e1;
+      font-weight: 800;
+    }
+    .card .subtitle2 {
+      color: #94a3b8;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+    .price {
+      font-size: 26px;
+      color: #60a5fa;
+      font-weight: 900;
+      margin: 8px 0 14px;
+    }
+    .price small {
+      color: #94a3b8;
+      font-size: 12px;
+      font-weight: 700;
+      margin-left: 6px;
+    }
+    .features {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 16px;
+      color: #cbd5e1;
+      font-size: 14px;
+    }
+    .features li { padding: 6px 0; }
+    .features li.disabled { color: #64748b; text-decoration: line-through; position: relative; }
+    .features li.disabled::after { content: " ✕"; color: #ef4444; font-weight: 900; }
+    .btn {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      padding: 12px 14px;
+      border-radius: 10px;
+      background: #10b981;
+      color: #0b1020;
+      font-weight: 900;
+      text-decoration: none;
+      box-shadow: 0 6px 16px rgba(16, 185, 129, 0.35);
+    }
+    .btn:hover { filter: brightness(1.05); }
+    .btn.dark { background: #334155; color: #e2e8f0; box-shadow: 0 6px 16px rgba(51, 65, 85, 0.45); }
+    .benchmarks-section {
+      margin-top: 40px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 12px 30px rgba(30, 41, 59, 0.5);
+      background: rgba(2, 6, 23, 0.45);
+      border: 1px solid #1f2937;
+    }
+    .bench-header {
+      background: linear-gradient(135deg, #5b21b6 0%, #3b82f6 100%);
+      padding: 20px 24px;
+      color: #e2e8f0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: 900;
+    }
+    .bench-header .title { font-size: 18px; }
+    .bench-header .label { opacity: 0.9; }
+    .bench-table { background: rgba(2, 6, 23, 0.45); }
+    .bench-row {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr 0.8fr;
+      gap: 12px;
+      align-items: center;
+      padding: 16px 24px;
+      border-top: 1px solid #1f2937;
+      background: rgba(10, 15, 35, 0.65);
+    }
+    .bench-row:nth-child(odd) { background: rgba(15, 23, 42, 0.7); }
+    .bench-cell { color: #e2e8f0; font-size: 14px; }
+    .bench-cell .em { color: #93c5fd; font-weight: 900; }
+    .badge { display: inline-block; padding: 4px 8px; border-radius: 8px; background: #1f2937; color: #e2e8f0; font-size: 12px; }
+    .order-btn { background: #fde047; color: #1f2937; font-weight: 900; padding: 10px 12px; border-radius: 10px; text-align: center; text-decoration: none; }
+    @media (max-width: 640px) {
+      .bench-row { grid-template-columns: 1fr 1fr; }
+      .bench-cell.hide-sm { display: none; }
+    }
   </style>
   <meta name="description" content="DevtopZ Services: professional server editing, balancing, tuning, localization, and consultation." />
 </head>
@@ -111,77 +222,104 @@
   </nav>
   <div class="wrapper">
     <h1>DevtopZ Services</h1>
-    <div class="subtitle">Professional Server Editing & Consultation</div>
+    <div class="subtitle">Check Out Build Plans, And Order Now</div>
     <div class="subtitle">Contact Discord: devtopz_ or https://discord.gg/6BVwnHRejP </div>
 
-    <div class="chapter">
-      <h2>Server Setup & Configuration</h2>
-      <ul>
-        <li>Clean installation and environment configuration</li>
-        <li>Config tuning for rates, drops, toggles</li>
-        <li>Deployment guidance and best practices</li>
-      </ul>
-      <p class="small">Set up a stable base tailored to your goals.</p>
+    <div class="section-title">Build Plans</div>
+    <div class="pricing-grid">
+      <div class="card">
+        <h3>PRO BUILD</h3>
+        <div class="subtitle2">perfect for starting a new server</div>
+        <div class="price">$500 <small>One Time</small></div>
+        <ul class="features">
+          <li>Max Level 50 - 70</li>
+          <li>Edit NPC, Cash Shop & Drop</li>
+          <li>3 Daily Quest</li>
+          <li>1 NPC Daily</li>
+          <li>Include Combine System</li>
+          <li>4 Type Costume Items</li>
+          <li>Work Time 7-14 Day</li>
+          <li>Max 1x Revise</li>
+          <li class="disabled">Include Website & GameCP</li>
+          <li class="disabled">Include HackShield</li>
+        </ul>
+        <a class="btn" href="https://discord.gg/6BVwnHRejP" target="_blank" rel="noopener">Order Now!</a>
+      </div>
+
+      <div class="card">
+        <h3>FULL CUSTOM</h3>
+        <div class="subtitle2">suitable for servers without limitations</div>
+        <div class="price">$650 <small>One Time</small></div>
+        <ul class="features">
+          <li>Max Level 50 - 66</li>
+          <li>Edit NPC, Cash Shop & Drop</li>
+          <li>Unlimited Daily Quest</li>
+          <li>Unlimited NPC Daily</li>
+          <li>Unlimited Costume Item Request</li>
+          <li>Include Combine System</li>
+          <li>Work Time 14-30 Day</li>
+          <li>Max 3x Revise</li>
+          <li class="disabled">Include Website & GameCP</li>
+          <li class="disabled">Include HackShield</li>
+        </ul>
+        <a class="btn" href="https://discord.gg/6BVwnHRejP" target="_blank" rel="noopener">Order Now!</a>
+      </div>
+
+      <div class="card vip">
+        <h3>VIP CUSTOM</h3>
+        <div class="subtitle2">mostly used by server professionals</div>
+        <div class="price">$1,200 <small>One Time</small></div>
+        <ul class="features">
+          <li>Max Level 50 - 99</li>
+          <li>Edit NPC, Cash shop & Drop</li>
+          <li>Unlimited Daily Quest</li>
+          <li>Unlimited NPC Daily</li>
+          <li>Unlimited Costume Item Request</li>
+          <li>Include Combine System</li>
+          <li>Work Time 14-30 Day</li>
+          <li>Unlimited Revise</li>
+          <li>Include Website & GameCP (1 Year)</li>
+          <li class="disabled">Include HackShield</li>
+        </ul>
+        <a class="btn dark" href="https://discord.gg/6BVwnHRejP" target="_blank" rel="noopener">Order Now!</a>
+      </div>
     </div>
 
-    <div class="chapter">
-      <h2>Item & Economy Balancing</h2>
-      <ul>
-        <li>Item.edf review and adjustments</li>
-        <li>Crafting, set bonuses, and shop pricing</li>
-        <li>Timed items and premium balance</li>
-      </ul>
-      <p class="small">Create fair, engaging progression and monetization.</p>
-    </div>
-
-    <div class="chapter">
-      <h2>Skill & Combat Tuning</h2>
-      <ul>
-        <li>SkillForce.edf deep analysis</li>
-        <li>Buffs, debuffs, damage formulas</li>
-        <li>PvE/PvP balance iterations</li>
-      </ul>
-      <p class="small">Make combat responsive, readable, and fun.</p>
-    </div>
-
-    <div class="chapter">
-      <h2>Quest & Content Design</h2>
-      <ul>
-        <li>Quest.edf chains and rewards</li>
-        <li>Event messages and scheduling</li>
-        <li>Boss encounters and drop tables</li>
-      </ul>
-      <p class="small">Deliver meaningful progression and replayability.</p>
-    </div>
-
-    <div class="chapter">
-      <h2>Localization & Branding</h2>
-      <ul>
-        <li>Language.xlsx updates</li>
-        <li>Item, NPC, UI text polish</li>
-        <li>Custom branding integration</li>
-      </ul>
-      <p class="small">Make your server unique and accessible.</p>
-    </div>
-
-    <div class="chapter">
-      <h2>Performance & Stability</h2>
-      <ul>
-        <li>Error prevention and validation workflow</li>
-        <li>Data integrity checks and testing</li>
-        <li>Reload strategies and rollout plans</li>
-      </ul>
-      <p class="small">Keep uptime high and bugs low.</p>
-    </div>
-
-    <div class="chapter">
-      <h2>Security & Anti-Cheat Review</h2>
-      <ul>
-        <li>Configuration hardening</li>
-        <li>Exploit surface analysis</li>
-        <li>Policy and tooling recommendations</li>
-      </ul>
-      <p class="small">Protect players and your reputation.</p>
+    <div class="section-title" style="margin-top: 38px;">Benchmarks</div>
+    <div class="benchmarks-section">
+      <div class="bench-header">
+        <div class="title">Our Server Is <span style="color:#fde047;">90% Faster</span></div>
+        <div class="label">with under 60 seconds worldwide Deploy!</div>
+      </div>
+      <div class="bench-table">
+        <div class="bench-row">
+          <div class="bench-cell"><span class="em">75 GB NVMe or 150 GB SSD</span> SSD</div>
+          <div class="bench-cell hide-sm">4 vCPU Cores</div>
+          <div class="bench-cell hide-sm">8 GB RAM</div>
+          <div class="bench-cell hide-sm">200 Mbit/s Port </div>
+          <div class="bench-cell"><span class="badge">IPv4</span></div>
+          <div class="bench-cell"><span class="em">$45</span> /mo</div>
+          <a class="order-btn" href="https://discord.gg/6BVwnHRejP" target="_blank" rel="noopener">order now</a>
+        </div>
+        <div class="bench-row">
+          <div class="bench-cell"><span class="em">100 GB NVMe or 200 GB SSD</span> SSD</div>
+          <div class="bench-cell hide-sm">6 vCPU Cores</div>
+          <div class="bench-cell hide-sm">12 GB RAM</div>
+          <div class="bench-cell hide-sm">300 Mbit/s Port</div>
+          <div class="bench-cell"><span class="badge">IPv4</span></div>
+          <div class="bench-cell"><span class="em">$65</span> /mo</div>
+          <a class="order-btn" href="https://discord.gg/6BVwnHRejP" target="_blank" rel="noopener">order now</a>
+        </div>
+        <div class="bench-row">
+          <div class="bench-cell"><span class="em">200 GB NVMe or 400 GB SSD</span> SSD</div>
+          <div class="bench-cell hide-sm">8 vCPU Cores</div>
+          <div class="bench-cell hide-sm">24 GB RAM</div>
+          <div class="bench-cell hide-sm">600 Mbit/s Port</div>
+          <div class="bench-cell"><span class="badge">IPv4</span></div>
+          <div class="bench-cell"><span class="em">$95</span> /mo</div>
+          <a class="order-btn" href="https://discord.gg/6BVwnHRejP" target="_blank" rel="noopener">order now</a>
+        </div>
+      </div>
     </div>
 
     <footer>
